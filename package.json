@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "hyperscript.org": "^0.9.14"
+  }
+}
