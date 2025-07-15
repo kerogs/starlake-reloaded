@@ -1,6 +1,6 @@
 # startlake
 
-I really like the atmosphere of the startpage that you can find by [clicking here](https://github.com/refact0r/startlake?tab=readme-ov-file), which was created by [refact0r](https://github.com/refact0r). I've decided to improve it in my own way. Since I'd be adding a lot of changes and risk it losing its original look, I've decided to make a brand new version.
+I really like the atmosphere of the startpage [starlake](https://github.com/refact0r/startlake?tab=readme-ov-file), which was created by [refact0r](https://github.com/refact0r). I've decided to improve it in my own way. Since I'd be adding a lot of changes and risk it losing its original look, I've decided to make a brand new version.
 
 > [!IMPORTANT]
 > Alpha version !
