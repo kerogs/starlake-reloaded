@@ -5,6 +5,9 @@ I really like the atmosphere of the startpage [starlake](https://github.com/refa
 > [!IMPORTANT]
 > Alpha version !
 
+> [!NOTE]
+> For help with configuration, please read ``CONFIG_README.md``
+
 ## Install
 
 ### firefox
