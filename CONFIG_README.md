@@ -9,7 +9,7 @@ Services represents the button with an image at the top right of the page.
 It lets you add shortcut buttons to quickly redirect to different services.
 
 ### Change services images
-You can change the image to your profile photo (or other) simply by replacing the file in ``/avatar.png`` and modifying the value in config.js (if required)
+You can change the image to your profile photo (or other) simply by replacing the file in ``/avatar.png`` and modifying the value in config.js (if required). You can use full url if you want.
 ```js
 const googleServices = {
     "image": "avatar.png",

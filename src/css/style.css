@@ -271,6 +271,7 @@ main {
   border: 3px solid var(--color-background);
   overflow: hidden;
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  opacity: 1;
 }
 .googleService__btn:hover {
   transform: rotate(-15deg) scale(1.1);
@@ -279,6 +280,9 @@ main {
   width: 100%;
   height: 100%;
 }
+.googleService__btn.hide {
+  opacity: 0;
+}
 .googleService__card {
   position: absolute;
   top: 0;
@@ -286,11 +290,112 @@ main {
   width: 400px;
   height: 600px;
   background-color: var(--color-background);
+  border: 10px solid var(--blue-2);
   border-radius: 1.625rem;
   overflow-x: hidden;
   overflow-y: auto;
-  display: flex;
+  display: none;
   flex-direction: column;
+}
+.googleService__card.active {
+  display: flex;
+  animation: gscActive 0.45s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+}
+.googleService__card.active .serviceLink a:nth-child(1) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.02s;
+}
+.googleService__card.active .serviceLink a:nth-child(2) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.04s;
+}
+.googleService__card.active .serviceLink a:nth-child(3) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.06s;
+}
+.googleService__card.active .serviceLink a:nth-child(4) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.08s;
+}
+.googleService__card.active .serviceLink a:nth-child(5) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.1s;
+}
+.googleService__card.active .serviceLink a:nth-child(6) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.12s;
+}
+.googleService__card.active .serviceLink a:nth-child(7) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.14s;
+}
+.googleService__card.active .serviceLink a:nth-child(8) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.16s;
+}
+.googleService__card.active .serviceLink a:nth-child(9) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.18s;
+}
+.googleService__card.active .serviceLink a:nth-child(10) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.2s;
+}
+.googleService__card.active .serviceLink a:nth-child(11) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.22s;
+}
+.googleService__card.active .serviceLink a:nth-child(12) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.24s;
+}
+.googleService__card.active .serviceLink a:nth-child(13) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.26s;
+}
+.googleService__card.active .serviceLink a:nth-child(14) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.28s;
+}
+.googleService__card.active .serviceLink a:nth-child(15) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.3s;
+}
+.googleService__card.active .serviceLink a:nth-child(16) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.32s;
+}
+.googleService__card.active .serviceLink a:nth-child(17) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.34s;
+}
+.googleService__card.active .serviceLink a:nth-child(18) {
+  animation: gscActive 0.6s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+  animation-delay: 0.36s;
+}
+.googleService__card.hide {
+  display: flex;
+  animation: gscHide 0.45s cubic-bezier(0.65, 0, 0.076, 1) forwards;
+}
+@keyframes gscActive {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes gscHide {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
 }
 .googleService__card .title {
   display: flex;
@@ -325,6 +430,7 @@ main {
   border-radius: 6px;
   overflow: hidden;
   transition: all 0.35s cubic-bezier(0.65, 0, 0.076, 1);
+  opacity: 0;
 }
 .googleService__card .serviceLink a span {
   height: 35px;
