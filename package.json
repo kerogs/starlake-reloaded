@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "hyperscript.org": "^0.9.14"
+    "hyperscript.org": "^0.9.14",
+    "material-icons": "^1.13.14"
   }
 }

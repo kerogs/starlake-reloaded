@@ -35,7 +35,6 @@ main {
     position: relative;
     height: 100%;
     width: 100%;
-    // background-color: blue;
     border-radius: 2rem;
     overflow: hidden;
 
@@ -144,3 +143,129 @@ main {
         width: 192px;
     }
 }
+
+.googleService {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 95;
+
+    justify-content: flex-end;
+    text-align: right;
+
+    &__btn {
+        cursor: pointer;
+        background: none;
+        border: none;
+
+        width: 3rem;
+        height: 3rem;
+
+        border-radius: 1.625rem;
+        border: 3px solid var(--color-background);
+
+        overflow: hidden;
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+
+        &:hover {
+            transform: rotate(-15deg) scale(1.1);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__card{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 400px;
+        height: 600px;
+        background-color: var(--color-background);
+        border-radius: 1.625rem;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        .title{
+            display: flex;
+            justify-content: space-between;
+            // align-items: center;
+
+            margin: 1rem 1.625rem;
+
+            svg{
+                cursor: pointer;
+
+                padding: 3px;
+                border-radius: 100%;
+                background-color: var(--blue-4);
+
+                transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+
+                &:hover{
+                    background-color: var(--blue-5);
+                    transform: rotate(15deg);
+                }
+            }
+        }
+
+        hr{
+            border: 1px solid var(--gray-3);
+        }
+
+        .serviceLink{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            padding: 1rem 1.625rem;
+
+            a{
+                // background-color: red;
+                text-align: center;
+                padding: 10px;
+                color: var(--gray-contrast);
+                text-decoration: none;
+                border-radius: 6px;
+                overflow: hidden;
+                transition: all 0.35s cubic-bezier(0.65, 0, 0.076, 1);
+
+                span{
+                    $size: 35px;
+                    height: $size;
+                    width: $size;
+                    font-size: $size;
+                    // fill: var(--blue-11);
+                    color: var(--blue-11);
+                }
+
+                p{
+                    font-size: 16px;
+
+                    // 1 line
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                &:hover{
+                    background-color: var(--blue-4);
+                    transform: translate(0, -5px);
+                }
+            }
+        }
+    }
+}
+
+.ccenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
